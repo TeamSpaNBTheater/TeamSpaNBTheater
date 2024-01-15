@@ -2,20 +2,28 @@
 //  SignUpVC.swift
 //  TeamSpaNBTheater
 //
-//  Created by woonKim on 2024/01/15.
-//
+
 
 import UIKit
 
 class SignUpVC: UIViewController {
-
+    
+    @IBOutlet weak var id: UITextField!
+    
+    @IBOutlet weak var password: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func signUpButton(_ sender: Any) {
+        UserDefaults.standard.set(id.text, forKey: "id")
+        
+        UserDefaults.standard.set(password.text, forKey: "password")
+    }
+    
     /*
     // MARK: - Navigation
 

@@ -2,20 +2,29 @@
 //  LogInVC.swift
 //  TeamSpaNBTheater
 //
-//  Created by woonKim on 2024/01/15.
-//
+
 
 import UIKit
 
 class LogInVC: UIViewController {
 
+    @IBOutlet weak var id: UITextField!
+    
+    @IBOutlet weak var password: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+      
+    }
+ 
+    @IBAction func loginButton(_ sender: Any) {
     }
     
-
+    @IBAction func signupButton(_ sender: Any) {
+        
+    }
+    
     /*
     // MARK: - Navigation
 
