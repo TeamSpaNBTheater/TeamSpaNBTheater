@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Kingfisher
 
 class MovieSearchCollectionViewCell: UICollectionViewCell {
     
@@ -22,7 +21,7 @@ class MovieSearchCollectionViewCell: UICollectionViewCell {
         moviePoster.clipsToBounds = true
         
         if let url = URL(string: urlString) {
-            moviePoster.kf.setImage(with: url)
+            //moviePoster.kf.setImage(with: url)
         }
     }
 }

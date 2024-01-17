@@ -171,6 +171,7 @@ class BookMovieVC: UIViewController {
         totalPriceLabel.text = String(Int(5000*Int(sender.value)))+" 원"
     }
 }
+
 struct PreView: PreviewProvider {
   static var previews: some View {
     BookMovieVC().toPreview()
