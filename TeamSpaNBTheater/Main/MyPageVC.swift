@@ -11,6 +11,7 @@ class MyPageVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("dev")
+        print("devTemp")
+        print("")
     }
 }
