@@ -7,5 +7,8 @@ target 'TeamSpaNBTheater' do
 
   # Pods for TeamSpaNBTheater
 
+feature/BookMovieVC
+  pod 'SwiftyJSON'
+  pod 'SnapKit'
 
 end
