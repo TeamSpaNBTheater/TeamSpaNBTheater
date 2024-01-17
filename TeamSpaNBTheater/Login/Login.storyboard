@@ -9,28 +9,12 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="0iO-cq-nOt">
-            <objects>
-                <navigationController id="kEt-to-fsM" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="i7Y-ar-m85">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="Y6W-OH-hqX" kind="show" id="TYB-CL-igs"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Flb-z0-PkS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-527" y="31"/>
-        </scene>
         <!--Log InVC-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController id="Y6W-OH-hqX" customClass="LogInVC" customModule="TeamSpaNBTheater" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="아이디 입력" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SzY-Js-SyB">
@@ -66,6 +50,9 @@
                                     <backgroundConfiguration key="background" cornerRadius="16"/>
                                     <color key="baseBackgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="loginButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="RLZ-ZA-r0u"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hb5-Ao-9MB">
                                 <rect key="frame" x="118" y="455" width="156" height="35"/>
@@ -75,23 +62,24 @@
                                     <backgroundConfiguration key="background" cornerRadius="16"/>
                                     <color key="baseBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="signupButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ahR-Dx-wrg"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="backgroundColor" red="0.41568627450980389" green="0.63921568627450975" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="gRP-o9-T8Y"/>
                     <connections>
-                        <outlet property="id" destination="SzY-Js-SyB" id="iNx-kH-J0S"/>
-                        <outlet property="nametext" destination="SzY-Js-SyB" id="g75-rf-brF"/>
                         <outlet property="password" destination="ImA-jU-tbQ" id="FfH-FE-m0f"/>
-                        <outlet property="passwordText" destination="ImA-jU-tbQ" id="Uy9-rA-Ig7"/>
+                        <outlet property="userId" destination="SzY-Js-SyB" id="coh-ar-ZYd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="uDp-L5-1Zi" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="168.70229007633588" y="30.985915492957748"/>
+            <point key="canvasLocation" x="181" y="31"/>
         </scene>
         <!--Sign UpVC-->
         <scene sceneID="tbc-yZ-PfQ">
@@ -136,23 +124,36 @@
                                     <action selector="signupButton:" destination="Hd2-SI-PDE" eventType="touchUpInside" id="LCb-jQ-GZF"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PDi-Ld-4NC">
+                                <rect key="frame" x="118" y="476" width="156" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="뒤로가기">
+                                    <backgroundConfiguration key="background" cornerRadius="16"/>
+                                    <color key="baseBackgroundColor" systemColor="underPageBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="signupButton:" destination="Hd2-SI-PDE" eventType="touchUpInside" id="4Lz-Re-Ude"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gr8-VG-guK"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="backgroundColor" red="0.41568627450980389" green="0.63921568627450975" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
                         <outlet property="id" destination="w2p-68-qKU" id="zaH-Vw-zZH"/>
                         <outlet property="password" destination="9w9-MZ-VDJ" id="bbe-4o-AYQ"/>
+                        <outlet property="userId" destination="w2p-68-qKU" id="FHM-Om-nGr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZF0-cf-g90" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1013" y="18"/>
+            <point key="canvasLocation" x="935" y="31"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="underPageBackgroundColor">
+            <color red="0.70980392156862748" green="0.71764705882352942" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
