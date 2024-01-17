@@ -9,7 +9,6 @@ import UIKit
 import SwiftUI
 import SnapKit
 
-
 class BookMovieVC: UIViewController {
     
     var book = UILabel()            //"예매하기"
