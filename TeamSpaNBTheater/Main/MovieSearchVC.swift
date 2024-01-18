@@ -114,18 +114,19 @@ extension MovieSearchVC: UICollectionViewDelegate {
 
 extension MovieSearchVC: UICollectionViewDataSource {
     
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.movieSearchData.keys.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MovieSearchCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
         
         // ImageCell에 데이터 전달하여 설정
         let keyAtIndex = Array(movieSearchData.keys)[indexPath.item]
         let title = movieSearchData[keyAtIndex] ?? ""
-        cell.configure(with: keyAtIndex) // assuming backdropPath is the key
-        cell.movieTitle.text = title
+//        cell.configure(with: keyAtIndex) // assuming backdropPath is the key
+//        cell.movieTitle.text = title
         
         return cell
     }

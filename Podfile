@@ -9,5 +9,6 @@ target 'TeamSpaNBTheater' do
 
   pod 'SwiftyJSON'
   pod 'SnapKit'
+  pod 'RxSwift'
 
 end
