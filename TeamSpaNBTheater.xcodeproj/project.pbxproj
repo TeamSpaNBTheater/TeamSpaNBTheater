@@ -7,12 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E717CCAA186B1FF0B20DFA80 /* Pods_TeamSpaNBTheater.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DE646E2913C62DFD5ACDDC /* Pods_TeamSpaNBTheater.framework */; };
+		C41E793A2B59039A00D54B40 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E3960152B553D6D00327471 /* Login.storyboard */; };
+		C41E793B2B5903C900D54B40 /* LogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3960172B553D9D00327471 /* LogInVC.swift */; };
+		C41E793C2B5903CB00D54B40 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3960192B553DB400327471 /* SignUpVC.swift */; };
+		C41E793D2B5903CE00D54B40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E3960062B5502F200327471 /* Main.storyboard */; };
+		C41E793E2B5903D000D54B40 /* MovieListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3960042B5502F200327471 /* MovieListVC.swift */; };
+		C41E793F2B5903D400D54B40 /* MovieDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E39601C2B553F0B00327471 /* MovieDetailVC.swift */; };
+		C41E79402B5903D700D54B40 /* BookMovieVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E39601E2B553FF600327471 /* BookMovieVC.swift */; };
+		C41E79412B5903D900D54B40 /* MovieSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3960202B55400F00327471 /* MovieSearchVC.swift */; };
+		C41E79422B5903DA00D54B40 /* MyPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3960222B55402000327471 /* MyPageVC.swift */; };
+		C41E79432B5903DC00D54B40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3960002B5502F200327471 /* AppDelegate.swift */; };
+		C41E79442B5903DF00D54B40 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3960022B5502F200327471 /* SceneDelegate.swift */; };
+		C41E79452B5903E200D54B40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E39600B2B5502F300327471 /* LaunchScreen.storyboard */; };
+		C41E79462B59041E00D54B40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E3960092B5502F300327471 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1733D9CCD6762A4DE64D0AFD /* Pods-TeamSpaNBTheater.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeamSpaNBTheater.debug.xcconfig"; path = "Target Support Files/Pods-TeamSpaNBTheater/Pods-TeamSpaNBTheater.debug.xcconfig"; sourceTree = "<group>"; };
-		4E395FFD2B5502F200327471 /* TeamSpaNBTheater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamSpaNBTheater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E3960002B5502F200327471 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E3960022B5502F200327471 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4E3960042B5502F200327471 /* MovieListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListVC.swift; sourceTree = "<group>"; };
@@ -27,8 +37,7 @@
 		4E39601E2B553FF600327471 /* BookMovieVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMovieVC.swift; sourceTree = "<group>"; };
 		4E3960202B55400F00327471 /* MovieSearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchVC.swift; sourceTree = "<group>"; };
 		4E3960222B55402000327471 /* MyPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageVC.swift; sourceTree = "<group>"; };
-		C8DE646E2913C62DFD5ACDDC /* Pods_TeamSpaNBTheater.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeamSpaNBTheater.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EBE1B36AE32437F424D1F48B /* Pods-TeamSpaNBTheater.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeamSpaNBTheater.release.xcconfig"; path = "Target Support Files/Pods-TeamSpaNBTheater/Pods-TeamSpaNBTheater.release.xcconfig"; sourceTree = "<group>"; };
+		C41E79472B5906AA00D54B40 /* TeamSpaNBTheater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamSpaNBTheater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,39 +45,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E717CCAA186B1FF0B20DFA80 /* Pods_TeamSpaNBTheater.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3CCB539ED95593650D58C63F /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1733D9CCD6762A4DE64D0AFD /* Pods-TeamSpaNBTheater.debug.xcconfig */,
-				EBE1B36AE32437F424D1F48B /* Pods-TeamSpaNBTheater.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		4E395FF42B5502F200327471 = {
 			isa = PBXGroup;
 			children = (
 				4E395FFF2B5502F200327471 /* TeamSpaNBTheater */,
-				4E395FFE2B5502F200327471 /* Products */,
-				3CCB539ED95593650D58C63F /* Pods */,
-				D183C33AA28234BA810266F7 /* Frameworks */,
+				C41E79472B5906AA00D54B40 /* TeamSpaNBTheater.app */,
 			);
-			sourceTree = "<group>";
-		};
-		4E395FFE2B5502F200327471 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				4E395FFD2B5502F200327471 /* TeamSpaNBTheater.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		4E395FFF2B5502F200327471 /* TeamSpaNBTheater */ = {
@@ -108,14 +96,6 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		D183C33AA28234BA810266F7 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C8DE646E2913C62DFD5ACDDC /* Pods_TeamSpaNBTheater.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -123,9 +103,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E3960112B5502F300327471 /* Build configuration list for PBXNativeTarget "TeamSpaNBTheater" */;
 			buildPhases = (
-				5DCACA5BD95A4AD6A52D1995 /* [CP] Check Pods Manifest.lock */,
+				C41E79382B59037D00D54B40 /* Sources */,
 				6697ABCAA7EABCE4E551B243 /* Frameworks */,
-				F5E762C12B7EBFCDD042069F /* [CP] Embed Pods Frameworks */,
+				C41E79392B59038600D54B40 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -133,7 +113,7 @@
 			);
 			name = TeamSpaNBTheater;
 			productName = TeamSpaNBTheater;
-			productReference = 4E395FFD2B5502F200327471 /* TeamSpaNBTheater.app */;
+			productReference = C41E79472B5906AA00D54B40 /* TeamSpaNBTheater.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -160,7 +140,7 @@
 				Base,
 			);
 			mainGroup = 4E395FF42B5502F200327471;
-			productRefGroup = 4E395FFE2B5502F200327471 /* Products */;
+			productRefGroup = 4E395FF42B5502F200327471;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -169,47 +149,38 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		5DCACA5BD95A4AD6A52D1995 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
+/* Begin PBXResourcesBuildPhase section */
+		C41E79392B59038600D54B40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TeamSpaNBTheater-checkManifestLockResult.txt",
+				C41E79462B59041E00D54B40 /* Assets.xcassets in Resources */,
+				C41E79452B5903E200D54B40 /* LaunchScreen.storyboard in Resources */,
+				C41E793A2B59039A00D54B40 /* Login.storyboard in Resources */,
+				C41E793D2B5903CE00D54B40 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
 		};
-		F5E762C12B7EBFCDD042069F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C41E79382B59037D00D54B40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TeamSpaNBTheater/Pods-TeamSpaNBTheater-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TeamSpaNBTheater/Pods-TeamSpaNBTheater-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				C41E79432B5903DC00D54B40 /* AppDelegate.swift in Sources */,
+				C41E79402B5903D700D54B40 /* BookMovieVC.swift in Sources */,
+				C41E79442B5903DF00D54B40 /* SceneDelegate.swift in Sources */,
+				C41E793C2B5903CB00D54B40 /* SignUpVC.swift in Sources */,
+				C41E793B2B5903C900D54B40 /* LogInVC.swift in Sources */,
+				C41E79412B5903D900D54B40 /* MovieSearchVC.swift in Sources */,
+				C41E79422B5903DA00D54B40 /* MyPageVC.swift in Sources */,
+				C41E793F2B5903D400D54B40 /* MovieDetailVC.swift in Sources */,
+				C41E793E2B5903D000D54B40 /* MovieListVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TeamSpaNBTheater/Pods-TeamSpaNBTheater-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
-/* End PBXShellScriptBuildPhase section */
+/* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
 		4E3960062B5502F200327471 /* Main.storyboard */ = {
@@ -347,7 +318,6 @@
 		};
 		4E3960122B5502F300327471 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1733D9CCD6762A4DE64D0AFD /* Pods-TeamSpaNBTheater.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -377,7 +347,6 @@
 		};
 		4E3960132B5502F300327471 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EBE1B36AE32437F424D1F48B /* Pods-TeamSpaNBTheater.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
